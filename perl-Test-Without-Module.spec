@@ -2,8 +2,8 @@
 
 Summary:	Test::Without::Module - Test fallback behaviour in absence of modules
 Name:		perl-%{real_name}
-Version:	0.06
-Release: %mkrel 3
+Version:	0.09
+Release: %mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
@@ -27,6 +27,8 @@ perl -pi -e "s|pod2test|/bin/true|g" Makefile.PL
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
+
+%check
 make test
 
 %install
