@@ -2,7 +2,7 @@
 
 Summary:	Test::Without::Module - Test fallback behaviour in absence of modules
 Name:		perl-%{real_name}
-Version:	0.09
+Version:	0.11
 Release: %mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
