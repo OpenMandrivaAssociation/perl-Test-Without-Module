@@ -11,6 +11,7 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Test/%{real_name}-%{versi
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::Inline)
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This module allows you to deliberately hide modules from a program
