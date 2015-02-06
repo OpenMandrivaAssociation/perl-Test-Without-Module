@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	4
 
 Summary:	Test::Without::Module - Test fallback behaviour in absence of modules
 License:	GPL+ or Artistic
