@@ -1,15 +1,15 @@
 %define upstream_name    Test-Without-Module
-%define upstream_version 0.17
+%define upstream_version 0.23
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Test::Without::Module - Test fallback behaviour in absence of modules
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://github.com/Corion/test-without-module
+Source0:	https://cpan.metacpan.org/authors/id/C/CO/CORION/Test-Without-Module-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
