@@ -1,15 +1,13 @@
 %define upstream_name    Test-Without-Module
-%define upstream_version 0.23
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.23
+Release:	2
 
 Summary:	Test::Without::Module - Test fallback behaviour in absence of modules
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/Corion/test-without-module
-Source0:	https://cpan.metacpan.org/authors/id/C/CO/CORION/Test-Without-Module-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/C/CO/CORION/Test-Without-Module-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -22,7 +20,7 @@ even though they are installed. This is mostly useful for testing modules
 that have a fallback when a certain dependency module is not installed.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 # pod2test is gone from perl-Test-Inline
 perl -pi -e "s|pod2test|/bin/true|g" Makefile.PL
@@ -46,9 +44,7 @@ make test
 %changelog
 * Sat Aug 01 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.170.0-1mdv2010.0
 + Revision: 405602
-- rebuild using %%perl_convert_version
-
-* Mon Jan 19 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.17-1mdv2009.1
+- rebuild using %0.23 Mon Jan 19 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.17-1mdv2009.1
 + Revision: 331151
 - update to new version 0.17
 
